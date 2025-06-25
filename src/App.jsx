@@ -11,8 +11,11 @@ function App() {
       <p>Enjoy coding with React!</p>
       <p>Make sure to check out the documentation for more features.</p>
       <p>Happy coding!</p>
+      <p>Feel free to modify this code as you like.</p>
+      <p>React is a powerful library for building user interfaces.</p>
+      <p>Explore the React ecosystem for additional libraries and tools.</p>
+      <p>React has a vibrant community, so you can find help easily.</p>
       <p>Keep learning and improving your skills in React.</p>
-      <p>There are many resources available online to help you.</p>
       <p>Enjoy building amazing applications with React!</p>
     </>
   )
