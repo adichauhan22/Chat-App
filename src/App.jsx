@@ -1,24 +1,34 @@
-import { useState } from 'react'
-import './App.css'
+/*
+ * Real time private chatting app using React, Nodejs, mongodb and Socket.io
+ * @author Shashank Tiwari
+ */
 
-function App() {
-  return (
-    <>
-      <h1>Hello World</h1>
-      <p>This is a simple React application.</p>
-      <p>Click the button below to see a message.</p>
-      <button onClick={() => alert('Button clicked!')}>Click Me</button>
-      <p>Enjoy coding with React!</p>
-      <p>Make sure to check out the documentation for more features.</p>
-      <p>Happy coding!</p>
-      <p>Feel free to modify this code as you like.</p>
-      <p>React is a powerful library for building user interfaces.</p>
-      <p>Explore the React ecosystem for additional libraries and tools.</p>
-      <p>React has a vibrant community, so you can find help easily.</p>
-      <p>Keep learning and improving your skills in React.</p>
-      <p>Enjoy building amazing applications with React!</p>
-    </>
-  )
+import React, { Component } from 'react';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from "react-router-dom";
+
+import Authentication from './pages/authentication/Authentication';
+import Home from './pages/home/Home';
+import NotFound from './pages/not-found/NotFound';
+
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Authentication} />
+          <Route path="/home/" component={Home} />
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
+    );
+  }
 }
 
-export default App
+export default App;
