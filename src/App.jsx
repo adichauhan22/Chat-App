@@ -1,8 +1,3 @@
-/*
- * Real time private chatting app using React, Nodejs, mongodb and Socket.io
- * @author Shashank Tiwari
- */
-
 import React, { Component } from 'react';
 
 import {
